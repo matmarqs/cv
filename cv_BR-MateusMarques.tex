@@ -1,0 +1,251 @@
+\documentclass[a4paper]{article}
+% additional packages for pt_BR
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}
+\input{preamble}
+
+\newcommand{\myaddress}{Fake Street, 404 -- 00000-123}
+\newcommand{\myphone}{+55 (00) 99999-9999}
+\newcommand{\myemail}{\href{mailto:mail@example.com}{\texttt{mail@example.com}}}
+\newcommand{\mycity}{City, ST}
+
+\begin{document}
+
+\simpleheader{fig/background.png}{Mateus Marques}{Pentester | Cibersegurança}{white}
+
+% -------- PARACOL SETTINGS -------- %
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+\setlength{\columnsep}{1.0cm}
+\setcolumnwidth{\columnwidth}
+% ---------------------------------- %
+
+%            sum to one
+\columnratio{0.25, 0.75}
+\begin{paracol}{2}
+
+% -------------------------- LEFT COLUMN -------------------------- %
+\footnotesize
+\center
+
+\backgroundcolor{c[0](14pt,11.5pt)(0.5\columnsep,10000pt)}[rgb]{0.9,0.9,0.9}   % light grey color for left column
+% the 10.3pt is the exact value for light grey touching the header image
+
+\vspace{-2em}
+\roundpic{width=3.4cm}{fig/mateus.jpg}
+
+{\normalsize \textbf{Mateus Marques}}
+
+\flushright
+
+\bg{cvblue}{white}{\faAddressCard \; Sobre mim}\\[0.5em]
+
+Estou me especializando na área de cibersegurança, na qual estou muito ansioso para aprender e trabalhar.
+
+Minha formação acadêmica é Física e tenho bastante familiaridade com computadores e experiência em programação, principalmente Python e C.
+Adoro ser desafiado e estou sempre em busca de aprimorar minhas habilidades.
+
+\bigskip
+
+\bg{cvblue}{white}{\faPuzzlePiece \; Habilidades}\\[0.5em]
+
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{cvblue}{iconcolour}{\faLinux \; Linux} & \barrule{0.1}{0.5em}{cvgreen} \\
+     \bg{cvblue}{iconcolour}{\faPython \; python} & \barrule{0.08}{0.5em}{cvpurple} \\
+     \bg{cvblue}{iconcolour}{\faFilePdf \; \LaTeX} & \barrule{0.07}{0.5em}{cvpurple} \\
+     \bg{cvblue}{iconcolour}{\faCopyright \; C/C++} &  \barrule{0.06}{0.5em}{cvpurple}\\
+     \bg{cvblue}{iconcolour}{\faFileCode \; Bash} & \barrule{0.05}{0.5em}{cvred} \\
+     \bg{cvblue}{iconcolour}{\faUserSecret \; Pentesting} & \barrule{0.01}{0.5em}{cvred} \\
+\end{tabular}
+
+\bigskip
+
+\bg{cvblue}{white}{\faBook \; Atualmente estudando} \\[0.5em]
+Hacking ético
+
+Redes de computadores
+
+Estruturas de dados e algoritmos
+
+Python avançado
+
+HTML, CSS, Javascript
+
+\bigskip
+
+\bg{cvblue}{white}{\faDumbbell \; Pontos fortes} \\[0.5em]
+Solução de problemas
+
+Pensamento analítico
+
+Aprendizado rápido
+
+Trabalho em equipe
+
+Entusiasmo
+
+\bigskip
+
+\bg{cvblue}{white}{\faHeart \; Hobbies}\\[0.5em]
+
+CTFs
+
+Desafios de programação
+
+Calistenia
+
+Muay Thai
+
+Futebol
+
+\bigskip
+
+\infobubble{\faLinkedin}{cvblue}{white}{\href{https://www.linkedin.com/in/matmarqs/}{in/matmarqs}}
+\infobubble{\faGithub}{cvblue}{white}{\href{https://github.com/matmarqs}{github.com/matmarqs}}
+\infobubble{\faUserSecret}{cvblue}{white}{\href{https://app.hackthebox.com/profile/1886202}{hackthebox/matmarqs}}
+\infobubble{\faUserSecret}{cvblue}{white}{\href{https://tryhackme.com/p/matmarqs}{tryhackme/matmarqs}}
+% -------------------------- LEFT COLUMN -------------------------- %
+
+
+\switchcolumn
+
+\small
+\justify
+
+\vspace{-3em}
+
+% -------------------------- EXPERIENCE -------------------------- %
+\section*{\faBriefcase \; Experiência}
+
+\begin{tabular}{r| p{0.37\textwidth} c}
+    \cvevent{2023--Now}{Pesquisador | Física da Matéria Condensada}{Mestrado}{São Paulo, SP \color{cvred}}{Simetrias, topologia e propriedades eletrônicas do sistema de bicamada de grafeno. C++/Python para cálculo numérico e Bash para scripts de automação. \newline \href{https://github.com/matmarqs/matbg}{\faGithub \; \texttt{matmarqs/matbg}}}{fig/fapesp.png} \\
+    \cvevent{2022--2023}{Pesquisador | Física de Partículas}{Iniciação Científica}{São Paulo, SP \color{cvred}}{Evolução do sabor de neutrinos solares e de reatores nucleares. C para cálculos numéricos pesados e Python para análise de dados. \newline \href{https://github.com/matmarqs/neutrino-ic}{\faGithub \; \texttt{matmarqs/neutrino-ic}}}{fig/fapesp.png}
+\end{tabular}
+% -------------------------- EXPERIENCE -------------------------- %
+
+\vspace{1em}
+
+% -------------------------- EDUCATION -------------------------- %
+\begin{minipage}[t]{0.4\textwidth}
+\section*{\faGraduationCap \; Formação}
+\begin{tabular}{r p{0.57\textwidth} c}
+    \cvdegree{2023-Now}{Mestrado em Física}{M.Sc.}{Universidade de São Paulo \color{cvblue}}{}{fig/scientiavinces.png} \\
+    \cvdegree{2019-2022}{Bacharelado em Física \newline Média Ponderada: 9.2/10}{B.Sc.}{Universidade de São Paulo \color{cvblue}}{}{fig/scientiavinces.png} \\
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\textwidth}
+\section*{\faLanguage \; Idiomas}
+\begin{tabular}{l | ll}
+\vspace{0.5em}
+\textbf{Portuguese} & {\; \, \footnotesize falante nativo} \\
+\vspace{0.5em}
+\textbf{English}    & \pictofractionNO{\faCircle}{cvgreen}{5}{black!30}{0}{\tiny} \\
+\vspace{0.5em}
+\textbf{Japanese}   & \pictofraction{\faCircle}{cvgreen}{2}{black!30}{3}{\tiny} \\
+\vspace{0.5em}
+\textbf{German}     & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{4}{\tiny}
+\end{tabular}
+\end{minipage}
+% -------------------------- EDUCATION -------------------------- %
+
+\vspace{-2em}
+
+% -------------------------- AWARDS -------------------------- %
+\section*{\faAward \; Prêmios}
+\begin{minipage}[t]{0.33\textwidth}
+\begin{itemize}
+\item Competição Elon Lages Lima.
+
+2020: Medalha de Prata.
+
+\item Olimpíada Brasileira de Matemática \newline Universitária (OBMU).
+
+2020: Menção Honrosa.
+
+2019: Medalha de Bronze.
+
+\item Olimpíada Brasileira de Matemática \newline das Escolas Públicas (OBMEP).
+
+2017: Medalha de Prata.
+
+2016: Medalha de Bronze.
+
+2015: Menção Honrosa.
+
+\item Olimpíada Canguru de Matemática.
+
+2018: Medalha de Ouro
+
+
+\item Olimpíada Brasileira de Astronomia \newline (OBA).
+
+2018: Medalha de Ouro.
+\end{itemize}
+\end{minipage}
+\begin{minipage}[t]{0.33\textwidth}
+\begin{itemize}
+\item Olimpíada Brasileira de Física (OBF).
+
+2018: Medalha de Ouro Estadual.
+
+2017: Medalha de Ouro.
+
+2017: Medalha de Ouro Estadual.
+
+\item Olimpíada Matemática do Estado de Goiás (OMEG).
+
+2018: Medalha de Ouro.
+
+\item Olimpíada Brasileira de Robótica (OBR).
+
+2018: Medalha de Prata.
+
+\item Olimpíada Internacional de Matemática sem Fronteiras.
+
+2018: Medalha de Ouro com a equipe do Colégio Simbios.
+
+\item Olimpíada Brasileira de Física das Escolas Públicas (OBFEP).
+
+2017: Medalha de Ouro.
+
+2016: Medalha de Bronze.
+\end{itemize}
+\end{minipage}
+% -------------------------- AWARDS -------------------------- %
+
+\vspace{-0.5em}
+
+% -------------------------- COURSES -------------------------- %
+\footnotesize
+\section*{\faSchool \; Cursos Extracurriculares}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2021}{Introdução à Teoria dos Números -- IMPA}{Estudante Remoto}{Rio de Janeiro, RJ \color{cvred}}{Curso de verão de nível de mestrado em Teoria dos Números. \newline Duração: 2 meses. Nota: A.}{fig/impa.png} \\
+    \cvevent{2017}{Língua Inglesa e Liderança Global em New Jersey City University -- Programa Goiás sem Fronteiras}{Estudante de Intercâmbio}{Jersey City, NJ \color{cvred}}{Programa de intercâmbio para alunos de escolas públicas do estado de Goiás. \newline Duração: 1 mês.}{fig/goias-sem-fronteiras.jpg} \\
+\end{tabular}
+% -------------------------- COURSES -------------------------- %
+
+\vspace{1em}
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\newlength{\rightcolwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small
+\icon{\faEnvelope}{cvgreen}{} \myaddress \;\;
+\icon{\faCity}{cvgreen}{} \mycity \;\; \newline \newline
+\icon{\faPhone}{cvgreen}{} \myphone \;\;
+\icon{\faAt}{cvgreen}{} \myemail
+}
+\end{center}
+\end{minipage}
+
+
+
+\end{paracol}
+
+\end{document}

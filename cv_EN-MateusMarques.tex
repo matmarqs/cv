@@ -1,0 +1,247 @@
+\documentclass[a4paper]{article}
+\input{preamble}
+
+\newcommand{\myaddress}{Fake Street, 404 -- 00000-123}
+\newcommand{\myphone}{+55 (00) 99999-9999}
+\newcommand{\myemail}{\href{mailto:mail@example.com}{\texttt{mail@example.com}}}
+\newcommand{\mycity}{City, ST}
+
+\begin{document}
+
+\simpleheader{fig/background.png}{Mateus Marques}{Pentester | Cybersecurity}{white}
+
+% -------- PARACOL SETTINGS -------- %
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+\setlength{\columnsep}{1.0cm}
+\setcolumnwidth{\columnwidth}
+% ---------------------------------- %
+
+%            sum to one
+\columnratio{0.25, 0.75}
+\begin{paracol}{2}
+
+% -------------------------- LEFT COLUMN -------------------------- %
+\footnotesize
+\center
+
+\backgroundcolor{c[0](14pt,11.5pt)(0.5\columnsep,10000pt)}[rgb]{0.9,0.9,0.9}   % light grey color for left column
+% the 10.3pt is the exact value for light grey touching the header image
+
+\vspace{-2em}
+\roundpic{width=3.4cm}{fig/mateus.jpg}
+
+{\normalsize \textbf{Mateus Marques}}
+
+\flushright
+
+\bg{cvblue}{white}{\faAddressCard \; About me}\\[0.5em]
+
+I am specializing in the field of cybersecurity, which I am very excited to learn and work in.
+
+My academic background is Physics and I have a lot of familiarity with computers and experience in programming, mainly Python and C.
+
+I love being challenged and I'm always looking to improve my skills.
+
+\bigskip
+
+\bg{cvblue}{white}{\faPuzzlePiece \; Skills}\\[0.5em]
+
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{cvblue}{iconcolour}{\faLinux \; Linux} & \barrule{0.1}{0.5em}{cvgreen} \\
+     \bg{cvblue}{iconcolour}{\faPython \; python} & \barrule{0.08}{0.5em}{cvpurple} \\
+     \bg{cvblue}{iconcolour}{\faFilePdf \; \LaTeX} & \barrule{0.07}{0.5em}{cvpurple} \\
+     \bg{cvblue}{iconcolour}{\faCopyright \; C/C++} &  \barrule{0.06}{0.5em}{cvpurple}\\
+     \bg{cvblue}{iconcolour}{\faFileCode \; Bash} & \barrule{0.05}{0.5em}{cvred} \\
+     \bg{cvblue}{iconcolour}{\faUserSecret \; Pentesting} & \barrule{0.01}{0.5em}{cvred} \\
+\end{tabular}
+
+\bigskip
+
+\bg{cvblue}{white}{\faBook \; Currently studying} \\[0.5em]
+Ethical hacking
+
+Computer networks
+
+Data structures and algorithms
+
+Advanced Python
+
+HTML, CSS, Javascript
+
+\bigskip
+
+\bg{cvblue}{white}{\faDumbbell \; Strengths} \\[0.5em]
+Problem solving
+
+Analytical thinking
+
+Quick learner
+
+Teamwork
+
+Enthusiasm
+
+\bigskip
+
+\bg{cvblue}{white}{\faHeart \; Hobbies}\\[0.5em]
+
+CTFs
+
+Coding challenges
+
+Calisthenics
+
+Muay Thai
+
+Soccer
+
+\bigskip
+
+\infobubble{\faLinkedin}{cvblue}{white}{\href{https://www.linkedin.com/in/matmarqs/}{in/matmarqs}}
+\infobubble{\faGithub}{cvblue}{white}{\href{https://github.com/matmarqs}{github.com/matmarqs}}
+\infobubble{\faUserSecret}{cvblue}{white}{\href{https://app.hackthebox.com/profile/1886202}{hackthebox/matmarqs}}
+\infobubble{\faUserSecret}{cvblue}{white}{\href{https://tryhackme.com/p/matmarqs}{tryhackme/matmarqs}}
+% -------------------------- LEFT COLUMN -------------------------- %
+
+
+\switchcolumn
+
+\small
+\justify
+
+\vspace{-2.5em}
+
+% -------------------------- EXPERIENCE -------------------------- %
+\section*{\faBriefcase \; Experience}
+
+\begin{tabular}{r| p{0.37\textwidth} c}
+    \cvevent{2023--Now}{Research Scholar | Condensed Matter Physics}{Master's degree}{São Paulo, SP \color{cvred}}{Symmetries, topology and electronic properties of Twisted Bilayer Graphene. C++/Python for numerical analysis and Bash for automation scripts. \newline \href{https://github.com/matmarqs/matbg}{\faGithub \; \texttt{matmarqs/matbg}}}{fig/fapesp.png} \\
+    \cvevent{2022--2023}{Research Scholar | Particle Physics}{Scientific Initiation}{São Paulo, SP \color{cvred}}{Flavor evolution of solar and nuclear reactor neutrinos. C for heavy calculations and Python for data analysis. \newline \href{https://github.com/matmarqs/neutrino-ic}{\faGithub \; \texttt{matmarqs/neutrino-ic}}}{fig/fapesp.png}
+\end{tabular}
+% -------------------------- EXPERIENCE -------------------------- %
+
+\vspace{3em}
+
+% -------------------------- EDUCATION -------------------------- %
+\begin{minipage}[t]{0.4\textwidth}
+\section*{\faGraduationCap \; Education}
+\begin{tabular}{r p{0.57\textwidth} c}
+    \cvdegree{2023-Now}{M.Sc. in Physics}{M.Sc.}{Universidade de São Paulo \color{cvblue}}{}{fig/scientiavinces.png} \\
+    \cvdegree{2019-2022}{B.Sc. in Physics, GPA: 9.2/10}{B.Sc.}{Universidade de São Paulo \color{cvblue}}{}{fig/scientiavinces.png} \\
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\textwidth}
+\section*{\faLanguage \; Languages}
+\begin{tabular}{l | ll}
+\vspace{0.5em}
+\textbf{Portuguese} & {\; \, \footnotesize native speaker} \\
+\vspace{0.5em}
+\textbf{English}    & \pictofractionNO{\faCircle}{cvgreen}{5}{black!30}{0}{\tiny} \\
+\vspace{0.5em}
+\textbf{Japanese}   & \pictofraction{\faCircle}{cvgreen}{2}{black!30}{3}{\tiny} \\
+\vspace{0.5em}
+\textbf{German}     & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{4}{\tiny}
+\end{tabular}
+\end{minipage}
+% -------------------------- EDUCATION -------------------------- %
+
+% -------------------------- AWARDS -------------------------- %
+\section*{\faAward \; Awards}
+\begin{minipage}[t]{0.33\textwidth}
+\begin{itemize}
+\item Elon Lages Lima Competition.
+
+2020: Silver Medal.
+
+\item Brazilian University Mathematics \newline Olympiad (OBMU).
+
+2020: Honorable Mention.
+
+2019: Bronze Medal.
+
+\item Brazilian Public School Mathematics \newline Olympiad (OBMEP).
+
+2017: Silver Medal.
+
+2016: Bronze Medal.
+
+2015: Honorable Mention.
+
+\item Mathematics Kangaroo Brazil.
+
+2018: Gold Medal
+
+
+\item Brazilian Astronomy Olympiad (OBA).
+
+2018: Gold Medal.
+\end{itemize}
+\end{minipage}
+\begin{minipage}[t]{0.33\textwidth}
+\begin{itemize}
+\item Brazilian Physics Olympiad (OBF).
+
+2018: State Level Gold Medal.
+
+2017: Gold Medal.
+
+2017: State Level Gold Medal.
+
+\item Mathematics Olympiad of the State of Goiás (OMEG).
+
+2018: Gold Medal.
+
+\item Brazilian Robotics Olympiad (OBR).
+
+2018: Silver Medal.
+
+\item Mathématiques sans Frontières - Brazil.
+
+2018: Gold Medal with Colégio Simbios.
+
+\item Brazilian Public School Physics Olympiad (OBFEP).
+
+2017: Gold Medal.
+
+2016: Bronze Medal.
+\end{itemize}
+\end{minipage}
+% -------------------------- AWARDS -------------------------- %
+
+\vspace{1em}
+
+% -------------------------- COURSES -------------------------- %
+\footnotesize
+\section*{\faSchool \; Extracurricular Courses}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2021}{Introduction to Number Theory -- IMPA}{Remote Student}{Rio de Janeiro, RJ \color{cvred}}{2-month Master's level summer course on Number Theory. Grade: A.}{fig/impa.png} \\
+    \cvevent{2017}{English Language and Global Leadership Program at New Jersey City University -- Goiás sem Fronteiras Program}{Exchange Student}{Jersey City, NJ \color{cvred}}{1-month exchange program for public school students in the state of Goiás.}{fig/goias-sem-fronteiras.jpg} \\
+\end{tabular}
+% -------------------------- COURSES -------------------------- %
+
+\vspace{2em}
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\newlength{\rightcolwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small
+\icon{\faEnvelope}{cvgreen}{} \myaddress \;\;
+\icon{\faCity}{cvgreen}{} \mycity \;\; \newline \newline
+\icon{\faPhone}{cvgreen}{} \myphone \;\;
+\icon{\faAt}{cvgreen}{} \myemail
+}
+\end{center}
+\end{minipage}
+
+
+
+\end{paracol}
+
+\end{document}
