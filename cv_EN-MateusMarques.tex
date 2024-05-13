@@ -1,6 +1,10 @@
 \documentclass[a4paper]{article}
 \input{preamble}
 
+\usepackage{emoji}
+
+% https://www.youtube.com/watch?v=LFlsDm8w36A, from UnixGuy - Beginner cyber security projects you NEED to get hired
+
 \newcommand{\myaddress}{Fake Street, 404 -- 00000-123}
 \newcommand{\myphone}{+55 (00) 99999-9999}
 \newcommand{\myemail}{\href{mailto:mail@example.com}{\texttt{mail@example.com}}}
@@ -27,10 +31,10 @@
 \footnotesize
 \center
 
-\backgroundcolor{c[0](14pt,11.5pt)(0.5\columnsep,10000pt)}[rgb]{0.9,0.9,0.9}   % light grey color for left column
+\backgroundcolor{c[0](14pt,31.5pt)(0.5\columnsep,10000pt)}[rgb]{0.9,0.9,0.9}   % light grey color for left column
 % the 10.3pt is the exact value for light grey touching the header image
 
-\vspace{-2em}
+\vspace{-5em}
 \roundpic{width=3.4cm}{fig/mateus.jpg}
 
 {\normalsize \textbf{Mateus Marques}}
@@ -39,37 +43,45 @@
 
 \bg{cvblue}{white}{\faAddressCard \; About me}\\[0.5em]
 
-I am specializing in the field of cybersecurity, which I am very excited to learn and work in.
+I have always been a curious person, constantly striving to understand the intricate details of how things work.
 
-My academic background is Physics and I have a lot of familiarity with computers and experience in programming, mainly Python and C.
+My academic background is Physics, where I specialized in Condensed Matter Physics during my Master's.
 
-I love being challenged and I'm always looking to improve my skills.
+Currently, I am transitioning into cybersecurity with the dream of working in Offensive Security.
+
+Deeply drawn to the Unix philosophy, the open-source community and the dynamic problem-solving environment,
+
+I really enjoy to pulling up the hoodie and playing hacker.
 
 \bigskip
 
-\bg{cvblue}{white}{\faPuzzlePiece \; Skills}\\[0.5em]
+\bg{cvblue}{white}{\faLanguage \; Languages}\\[0.5em]
 
-\begin{tabular}{r @{\hspace{0.5em}}l}
-     \bg{cvblue}{iconcolour}{\faLinux \; Linux} & \barrule{0.1}{0.5em}{cvgreen} \\
-     \bg{cvblue}{iconcolour}{\faPython \; python} & \barrule{0.08}{0.5em}{cvpurple} \\
-     \bg{cvblue}{iconcolour}{\faFilePdf \; \LaTeX} & \barrule{0.07}{0.5em}{cvpurple} \\
-     \bg{cvblue}{iconcolour}{\faCopyright \; C/C++} &  \barrule{0.06}{0.5em}{cvpurple}\\
-     \bg{cvblue}{iconcolour}{\faFileCode \; Bash} & \barrule{0.05}{0.5em}{cvred} \\
-     \bg{cvblue}{iconcolour}{\faUserSecret \; Pentesting} & \barrule{0.01}{0.5em}{cvred} \\
+\begin{tabular}{r@{\hspace{0.5em}}l}
+\vspace{0.5em}
+\textbf{Portuguese} \; \emoji{flag-brazil} & \barrule{0.1}{0.5em}{cvgreen} \\
+\vspace{0.5em}
+\textbf{English} \; \emoji{flag-united-states}   & \barrule{0.1}{0.5em}{cvgreen} \\
+\vspace{0.5em}
+\textbf{Japanese} \; \emoji{flag-japan}  & \barrule{0.03}{0.5em}{cvpurple} \\
+\vspace{0.5em}
+\textbf{German} \; \emoji{flag-germany}    & \barrule{0.01}{0.5em}{cvred}
 \end{tabular}
 
 \bigskip
 
 \bg{cvblue}{white}{\faBook \; Currently studying} \\[0.5em]
-Ethical hacking
+Pentesting
+
+CompTIA Security+
 
 Computer networks
 
+Computer architecture
+
 Data structures and algorithms
 
-Advanced Python
-
-HTML, CSS, Javascript
+Web Hacking
 
 \bigskip
 
@@ -78,7 +90,7 @@ Problem solving
 
 Analytical thinking
 
-Quick learner
+Quick learner / Self-taught
 
 Teamwork
 
@@ -94,16 +106,15 @@ Coding challenges
 
 Calisthenics
 
-Muay Thai
+Running
 
-Soccer
+Bicycle
 
 \bigskip
 
 \infobubble{\faLinkedin}{cvblue}{white}{\href{https://www.linkedin.com/in/matmarqs/}{in/matmarqs}}
 \infobubble{\faGithub}{cvblue}{white}{\href{https://github.com/matmarqs}{github.com/matmarqs}}
-\infobubble{\faUserSecret}{cvblue}{white}{\href{https://app.hackthebox.com/profile/1886202}{hackthebox/matmarqs}}
-\infobubble{\faUserSecret}{cvblue}{white}{\href{https://tryhackme.com/p/matmarqs}{tryhackme/matmarqs}}
+\infobubble{\faCube}{cvblue}{white}{\href{https://app.hackthebox.com/profile/1886202}{hackthebox/matmarqs}}
 % -------------------------- LEFT COLUMN -------------------------- %
 
 
@@ -112,76 +123,79 @@ Soccer
 \small
 \justify
 
-\vspace{-2.5em}
+\vspace{-5em}
 
 % -------------------------- EXPERIENCE -------------------------- %
 \section*{\faBriefcase \; Experience}
 
-\begin{tabular}{r| p{0.37\textwidth} c}
-    \cvevent{2023--Now}{Research Scholar | Condensed Matter Physics}{Master's degree}{São Paulo, SP \color{cvred}}{Symmetries, topology and electronic properties of Twisted Bilayer Graphene. C++/Python for numerical analysis and Bash for automation scripts. \newline \href{https://github.com/matmarqs/matbg}{\faGithub \; \texttt{matmarqs/matbg}}}{fig/fapesp.png} \\
-    \cvevent{2022--2023}{Research Scholar | Particle Physics}{Scientific Initiation}{São Paulo, SP \color{cvred}}{Flavor evolution of solar and nuclear reactor neutrinos. C for heavy calculations and Python for data analysis. \newline \href{https://github.com/matmarqs/neutrino-ic}{\faGithub \; \texttt{matmarqs/neutrino-ic}}}{fig/fapesp.png}
+\begin{tabular}{r| p{0.4\textwidth} c}
+\cvevent{2024--Now}{Cybersecurity Student | Part-time}{Ethical Hacking}{\url{hackthebox.com} {\color{cvblue} ~\faGlobe}}
+{$\vdot$ Pentesting with Nmap, BurpSuite, Metasploit, SQLmap, etc. \newline
+$\vdot$ Reverse engineering with Ghidra and gdb. \newline
+$\vdot$ Network traffic analysis with tcpdump and Wireshark. \newline
+$\vdot$ Check out my pentesting write-ups at ~\href{https://github.com/matmarqs/cybersec}{\faGithub \, \texttt{matmarqs/cybersec}}.
+}{\vspace{-1.0em} &}{\raisebox{-0.7\height}{\includegraphics[height=1cm]{fig/htb.png}}} \\
 \end{tabular}
 % -------------------------- EXPERIENCE -------------------------- %
 
-\vspace{3em}
-
 % -------------------------- EDUCATION -------------------------- %
-\begin{minipage}[t]{0.4\textwidth}
 \section*{\faGraduationCap \; Education}
-\begin{tabular}{r p{0.57\textwidth} c}
-    \cvdegree{2023-Now}{M.Sc. in Physics}{M.Sc.}{Universidade de São Paulo \color{cvblue}}{}{fig/scientiavinces.png} \\
-    \cvdegree{2019-2022}{B.Sc. in Physics, GPA: 9.2/10}{B.Sc.}{Universidade de São Paulo \color{cvblue}}{}{fig/scientiavinces.png} \\
+\scriptsize
+\begin{tabular}{r|p{0.53\textwidth} c}
+\cvdegree{2023-Now}{\footnotesize{M.Sc. in Physics | Research Scholar at FAPESP}}{M.Sc.}
+{Universidade de São Paulo {\color{cvblue}\faUniversity} $\vdot$ São Paulo, SP {\color{cvred}~\faMapMarker*}}
+{During my Master’s degree, I specialized in Condensed Matter Physics, focusing on Solid State Materials, Quantum Many-Body Systems, and Group Theory. My research particularly delved into exploring the symmetries, topology, and electronic properties of Twisted Bilayer Graphene. I conducted extensive numerical analysis using C++ and Python, which led to novel findings on the Hubbard model within a Bethe lattice.
+}{\includegraphics[height=1.5cm]{fig/scientiavinces.png}} \\
+\cvdegree{2019-2022}{\footnotesize{B.Sc. in Physics | Research Scholar at FAPESP}}{B.Sc.}{Universidade de São Paulo {\color{cvblue}\faUniversity} $\vdot$ São Paulo, SP {\color{cvred}~\faMapMarker*}}
+{Throughout my bachelor’s degree, I encountered numerous stimulating challenges that honed my analytical thinking, abstraction, and problem-solving skills. I also delved deeply into modern physical theories such as Quantum Mechanics, Electromagnetism, and General Relativity. Additionally, I participated in a Particle Physics Scientific Initiation Project, where I utilized C and Python programming to investigate the flavor evolution of neutrinos. Achieving a GPA of 9.2/10, I ranked as the third-best student in my class.
+}{\includegraphics[height=1.5cm]{fig/scientiavinces.png}} \\
 \end{tabular}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.27\textwidth}
-\section*{\faLanguage \; Languages}
-\begin{tabular}{l | ll}
-\vspace{0.5em}
-\textbf{Portuguese} & {\; \, \footnotesize native speaker} \\
-\vspace{0.5em}
-\textbf{English}    & \pictofractionNO{\faCircle}{cvgreen}{5}{black!30}{0}{\tiny} \\
-\vspace{0.5em}
-\textbf{Japanese}   & \pictofraction{\faCircle}{cvgreen}{2}{black!30}{3}{\tiny} \\
-\vspace{0.5em}
-\textbf{German}     & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{4}{\tiny}
-\end{tabular}
-\end{minipage}
 % -------------------------- EDUCATION -------------------------- %
+
+\vspace{-1.0em}
+
+% -------------------------- SKILLS -------------------------- %
+\section*{\faPuzzlePiece \; Skills}
+\scriptsize
+\begin{tabular}{r@{\hspace{0.2em}}ll}
+     \bg{cvblue}{iconcolour}{\faLinux \; Linux} & \barrule{0.1}{0.5em}{cvgreen} &
+     \vspace{-0.7em} Very experienced Linux user. Installed and configured more than 50 Linux virtual \\
+     & & machines on a VirtualBox Home Lab. A lot of intimacy with many distributions such \\
+     & & as Arch, Kali, Debian, Ubuntu and Gentoo. Intensive use of command-line and shell \\
+     & & scripting to perform tasks. Active participation in the open-source community. \\
+     \bg{cvblue}{iconcolour}{\faPython \; python} & \barrule{0.08}{0.5em}{cvpurple} &
+     \vspace{-0.7em} Fluent in Python. I have mostly wrote numerical analysis programs and scripts \\
+     & & to automate various tasks. I am currently taking a Data Structures and Algorithms \\
+     & & course to further improve my Python programming skills. \\
+     %\bg{cvblue}{iconcolour}{\faFilePdf \; \LaTeX} & \barrule{0.07}{0.5em}{cvpurple} &
+     %\LaTeX \, wizard. \\
+     \bg{cvblue}{iconcolour}{\faCopyright \; C/C++} &  \barrule{0.06}{0.5em}{cvpurple} &
+     \vspace{-0.7em} Self-taught with the book ``The C Programming Language''. I have also participated \\
+     & & in several coding challenges and attempted to write a 2D game in C using the SDL \\
+     & & library. Check out ~\faGithub \, \href{https://github.com/matmarqs/aoc}{\texttt{matmarqs/aoc}} and ~\faGithub \, \href{https://github.com/matmarqs/gamedev}{\texttt{matmarqs/gamedev}}. \\
+     \bg{cvblue}{iconcolour}{\faUserSecret \; Pentesting} & \barrule{0.03}{0.5em}{cvred} &
+     \vspace{-0.7em} I have been studying and doing pentesting challenges for 2 months on several \\
+     & & online platforms, such as HTB, THM and OTW. I have basic experience on some \\
+     & & techniques and tools like SQL Injection, Nmap, BurpSuite, Ghidra and Wireshark. \\
+     \bg{cvblue}{iconcolour}{\faShield* ~CyberSec} & \barrule{0.02}{0.5em}{cvred} &
+     \vspace{-0.8em} Theoretical knowledge on security and networking concepts and some familiarity \\
+     & & with the NIST and OWASP frameworks.  \\
+\end{tabular}
+% -------------------------- SKILLS -------------------------- %
+
+\vspace{-1.0em}
 
 % -------------------------- AWARDS -------------------------- %
 \section*{\faAward \; Awards}
-\begin{minipage}[t]{0.33\textwidth}
+\scriptsize
+\begin{minipage}[t]{0.23\textwidth}
 \begin{itemize}
-\item Elon Lages Lima Competition.
-
-2020: Silver Medal.
-
-\item Brazilian University Mathematics \newline Olympiad (OBMU).
+\item Brazilian University Mathematics Olympiad (OBMU).
 
 2020: Honorable Mention.
 
 2019: Bronze Medal.
 
-\item Brazilian Public School Mathematics \newline Olympiad (OBMEP).
-
-2017: Silver Medal.
-
-2016: Bronze Medal.
-
-2015: Honorable Mention.
-
-\item Mathematics Kangaroo Brazil.
-
-2018: Gold Medal
-
-
-\item Brazilian Astronomy Olympiad (OBA).
-
-2018: Gold Medal.
-\end{itemize}
-\end{minipage}
-\begin{minipage}[t]{0.33\textwidth}
-\begin{itemize}
 \item Brazilian Physics Olympiad (OBF).
 
 2018: State Level Gold Medal.
@@ -190,35 +204,63 @@ Soccer
 
 2017: State Level Gold Medal.
 
-\item Mathematics Olympiad of the State of Goiás (OMEG).
-
-2018: Gold Medal.
-
 \item Brazilian Robotics Olympiad (OBR).
 
 2018: Silver Medal.
 
+\end{itemize}
+\end{minipage}
+\begin{minipage}[t]{0.23\textwidth}
+\begin{itemize}
+\item Brazilian Public School \newline Mathematics Olympiad (OBMEP).
+
+2017: Silver Medal.
+
+2016: Bronze Medal.
+
+2015: Honorable Mention.
+
+\item Mathematics Olympiad of the State of Goiás (OMEG).
+
+2018: Gold Medal.
+
 \item Mathématiques sans Frontières - Brazil.
 
 2018: Gold Medal with Colégio Simbios.
+
+\end{itemize}
+\end{minipage}
+\begin{minipage}[t]{0.23\textwidth}
+\begin{itemize}
+\item Elon Lages Lima Competition.
+
+2020: Silver Medal.
+
+\item Mathematics Kangaroo Brazil.
+
+2018: Gold Medal
+
+\item Brazilian Astronomy Olympiad \newline (OBA).
+
+2018: Gold Medal.
 
 \item Brazilian Public School Physics Olympiad (OBFEP).
 
 2017: Gold Medal.
 
 2016: Bronze Medal.
+
 \end{itemize}
 \end{minipage}
 % -------------------------- AWARDS -------------------------- %
 
-\vspace{1em}
+\vspace{-0.5em}
 
 % -------------------------- COURSES -------------------------- %
 \footnotesize
-\section*{\faSchool \; Extracurricular Courses}
-\begin{tabular}{r| p{0.5\textwidth} c}
-    \cvevent{2021}{Introduction to Number Theory -- IMPA}{Remote Student}{Rio de Janeiro, RJ \color{cvred}}{2-month Master's level summer course on Number Theory. Grade: A.}{fig/impa.png} \\
-    \cvevent{2017}{English Language and Global Leadership Program at New Jersey City University -- Goiás sem Fronteiras Program}{Exchange Student}{Jersey City, NJ \color{cvred}}{1-month exchange program for public school students in the state of Goiás.}{fig/goias-sem-fronteiras.jpg} \\
+\section*{\faSchool \; Certifications}
+\begin{tabular}{r| p{0.53\textwidth} c}
+    \cvevent{2024}{Google Cybersecurity Professional Certificate -- Coursera}{Online course}{\href{https://coursera.org/verify/professional-cert/H459BRS392G7}{Credential \textcolor{cyan}{H459BRS392G7} {\color{cvblue} \faCheck}}}{Beginner level cybersecurity program at Coursera, 168h. I learned many security and networking concepts, for example: Incident Response, SIEM, IDS/IPS, the OSI model, Firewalls, different types of Malware, Attacks and Vulnerabilities.}{\vspace{0.5em} &}{\raisebox{-0.7\height}{\includegraphics[height=1.5cm]{fig/google.png}}} \\
 \end{tabular}
 % -------------------------- COURSES -------------------------- %
 

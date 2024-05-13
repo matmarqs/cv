@@ -15,7 +15,7 @@
 \newcommand{\simpleheader}[4]{
 \tikz[remember picture, overlay] {%
 %\node[rectangle, fill=#1, anchor=north, minimum width=\paperwidth, minimum height=3.5cm](header) at (current page.north){};%
-\node[anchor=north, inner sep=0](header) at (current page.north){\includegraphics[height=3.5cm, width=\paperwidth]{#1}};%
+\node[anchor=north, inner sep=0](header) at (current page.north){\includegraphics[height=2.8cm, width=\paperwidth]{#1}};%
 \node[draw=none, align=left](name) at (header) { {\Huge \color{#4} #2 } };
 \node[draw=none, below](description) at (name.south) {\color{white}#3};
 }
@@ -45,8 +45,8 @@
 \end{tikzpicture}
 }
 }
-\newcommand{\cvevent}[6]{{#1} & \textbf{#2}\newline\textsc{#3} $\vdot$ {#4 ~\faMapMarker*}\newline{\color{black!70}\footnotesize #5}\vspace{1.5em} & \raisebox{-0.7\height}{\includegraphics[height=1cm]{#6}}}
-\newcommand{\cvdegree}[6]{{#1} & \textbf{#2}\newline {#4 {~\faUniversity}}\newline{\color{black!70}\scriptsize #5}\vspace{0.5em} & \raisebox{-0.7\height}{\includegraphics[height=0.8cm]{#6}}}
+\newcommand{\cvevent}[7]{{#1} & \textbf{#2}\newline\textsc{#3} $\vdot$ #4\newline{\color{black!70}\footnotesize #5} #6{#7}}
+\newcommand{\cvdegree}[6]{{#1} & \textbf{#2}\newline {#4}\newline{\color{black!70}\scriptsize #5}\vspace{0.5em} & \raisebox{-0.7\height}{#6}}
 \newcommand{\icon}[3]{\phantom{x}{#3\color{#2}#1}\phantom{x}}
 \newcommand{\pictofraction}[6]{%
 \pgfmathparse{#3 - 1}\foreach \n in {0,...,\pgfmathresult}{\icon{#1}{#2}{#6}}%
