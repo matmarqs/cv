@@ -3,16 +3,14 @@
 
 \usepackage{emoji}
 
-% https://www.youtube.com/watch?v=LFlsDm8w36A, from UnixGuy - Beginner cyber security projects you NEED to get hired
-
-\newcommand{\myaddress}{Fake Street, 404 -- 00000-123}
+%\newcommand{\myaddress}{Fake Street, 404 -- 00000-123}
 \newcommand{\myphone}{+55 (00) 99999-9999}
 \newcommand{\myemail}{\href{mailto:mail@example.com}{\texttt{mail@example.com}}}
 \newcommand{\mycity}{City, ST}
 
 \begin{document}
 
-\simpleheader{fig/background.png}{Mateus Marques}{Pentester | Cibersegurança}{white}
+\simpleheader{fig/background.png}{Mateus Marques}{Desenvolvedor Júnior | Full-Stack | Node.js | React | JavaScript | HTML | CSS}{white}
 
 % -------- PARACOL SETTINGS -------- %
 \tolerance=1
@@ -39,17 +37,20 @@
 
 {\normalsize \textbf{Mateus Marques}}
 
+\bigskip
+
+\infobubble{\faLinkedin}{cvblue}{white}{\href{https://www.linkedin.com/in/matmarqs/}{in/matmarqs}}
+\infobubble{\faGithub}{cvblue}{white}{\href{https://github.com/matmarqs}{github.com/matmarqs}}
+
 \flushright
 
 \bg{cvblue}{white}{\faAddressCard \; Sobre mim}\\[0.5em]
 
-Sempre fui uma pessoa curiosa, buscando constantemente entender como as coisas funcionam.
+Desenvolvedor Júnior Full Stack com experiência em React e Node.js.
 
-Minha formação acadêmica é em Física, onde me especializei em Física da Matéria Condensada durante meu mestrado.
+Sempre fui curioso, buscando entender como as coisas funcionam. Minha trajetória acadêmica começou na Física, onde me graduei e concluí o mestrado na USP.
 
-Atualmente, estou migrando para a área de cibersegurança com o sonho de trabalhar em Segurança Ofensiva.
-
-Aficionado pela filosofia Unix, pela comunidade open-source e pelo ambiente dinâmico de resolução de problemas, eu realmente gosto de colocar o capuz e brincar de hacker.
+Sou apaixonado pela filosofia Unix, pela cultura open-source e por desafios que estimulam o aprendizado e a inovação.
 
 \bigskip
 
@@ -57,11 +58,11 @@ Aficionado pela filosofia Unix, pela comunidade open-source e pelo ambiente din�
 
 \begin{tabular}{r@{\hspace{0.5em}}l}
 \vspace{0.5em}
-\textbf{Português} \; \emoji{flag-brazil} & \barrule{0.1}{0.5em}{cvgreen} \\
-\vspace{0.5em}
+%\textbf{Português} \; \emoji{flag-brazil} & \barrule{0.1}{0.5em}{cvgreen} \\
+%\vspace{0.5em}
 \textbf{Inglês} \; \emoji{flag-united-states}   & \barrule{0.1}{0.5em}{cvgreen} \\
 \vspace{0.5em}
-\textbf{Japonês} \; \emoji{flag-japan}  & \barrule{0.03}{0.5em}{cvpurple} \\
+\textbf{Japonês} \; \emoji{flag-japan}  & \barrule{0.015}{0.5em}{cvpurple} \\
 \vspace{0.5em}
 \textbf{Alemão} \; \emoji{flag-germany}    & \barrule{0.01}{0.5em}{cvred}
 \end{tabular}
@@ -69,17 +70,14 @@ Aficionado pela filosofia Unix, pela comunidade open-source e pelo ambiente din�
 \bigskip
 
 \bg{cvblue}{white}{\faBook \; Atualmente estudando} \\[0.5em]
-Pentesting
 
-CompTIA Security+
+React
 
-Redes de computadores
+Node.js
 
-Arquitetura de computadores
+REST APIs
 
-Estruturas de dados e algoritmos
-
-Web hacking
+Vulnerabilidades web
 
 \bigskip
 
@@ -88,9 +86,13 @@ Solução de problemas
 
 Pensamento analítico
 
-Aprendizado rápido / Autodidata
+Aprendizado rápido
+
+Autodidata
 
 Trabalho em equipe
+
+Foco em resultado
 
 Entusiasmo
 
@@ -98,21 +100,21 @@ Entusiasmo
 
 \bg{cvblue}{white}{\faHeart \; Hobbies}\\[0.5em]
 
-CTFs
+Calistenia
+
+Jogos Online
+
+Comunidade open-source
 
 Desafios de programação
 
-Calistenia
-
-Corrida
-
-Bicicleta
+Hacking ético
 
 \bigskip
 
-\infobubble{\faLinkedin}{cvblue}{white}{\href{https://www.linkedin.com/in/matmarqs/}{in/matmarqs}}
-\infobubble{\faGithub}{cvblue}{white}{\href{https://github.com/matmarqs}{github.com/matmarqs}}
-\infobubble{\faCube}{cvblue}{white}{\href{https://app.hackthebox.com/profile/1886202}{hackthebox/matmarqs}}
+%\infobubble{\faLinkedin}{cvblue}{white}{\href{https://www.linkedin.com/in/matmarqs/}{in/matmarqs}}
+%\infobubble{\faGithub}{cvblue}{white}{\href{https://github.com/matmarqs}{github.com/matmarqs}}
+%\infobubble{\faCube}{cvblue}{white}{\href{https://app.hackthebox.com/profile/1886202}{hackthebox/matmarqs}}
 % -------------------------- LEFT COLUMN -------------------------- %
 
 
@@ -127,62 +129,78 @@ Bicicleta
 \section*{\faBriefcase \; Experiência}
 
 \begin{tabular}{r| p{0.4\textwidth} c}
-\cvevent{2024--Agora}{Estudante de cibersegurança | Meio período}{Hacking ético}{\url{hackthebox.com} {\color{cvblue} ~\faGlobe}}
-{$\vdot$ Pentesting com Nmap, BurpSuite, Metasploit, SQLmap, etc. \newline
-$\vdot$ Engenharia reversa com Ghidra e gdb. \newline
-$\vdot$ Análise de tráfego de rede com tcpdump e Wireshark. \newline
-$\vdot$ Confira meu progresso em ~\href{https://github.com/matmarqs/cybersec}{\faGithub \, \texttt{matmarqs/cybersec}}.
-}{\vspace{0.0em} &}{\raisebox{-0.7\height}{\includegraphics[height=1cm]{fig/htb.png}}} \\
+\cvevent{2023--2024}{Estágio -- Monitor de curso de graduação}{Ensino}{Universidade de São Paulo {\color{cvblue} ~\faUniversity}}{$\vdot$ Monitor dos cursos de Física 1 e 2 para cursos de engenharia. \newline
+$\vdot$ Habilidades de comunicação para ensinar de forma eficiente. \newline
+$\vdot$ Criação de atividades didáticas por plataformas online.
+}{\vspace{0.0em} &}{\raisebox{-0.7\height}{\includegraphics[height=1.2cm]{fig/ifusp.png}}} \\
 \end{tabular}
 % -------------------------- EXPERIENCE -------------------------- %
+
+\medskip
 
 % -------------------------- EDUCATION -------------------------- %
 \section*{\faGraduationCap \; Formação acadêmica}
 \scriptsize
 \begin{tabular}{r|p{0.52\textwidth} c}
-\cvdegree{2023-Agora}{\footnotesize{Mestrado em Física | Pesquisador FAPESP}}{M.Sc.}
+\cvdegree{2025-Agora}{\footnotesize{Graduação em Análise e Desenvolvimento de Sistemas}}{Tecnólogo}
+{Faculdade Anhanguera {\color{cvblue}\faUniversity} $\vdot$ Goiânia, GO {\color{cvred}~\faMapMarker*}}
+{Desenvolvimento FullStack em JavaScript. \newline
+%Bancos de dados relacionais com PostgreSQL. \newline
+Projetos de software com metodologias ágeis.
+}{\includegraphics[width=1.2cm]{fig/anhanguera.png}} \\
+\cvdegree{2023-2024}{\footnotesize{Mestrado em Física}}{M.Sc.}
 {Universidade de São Paulo {\color{cvblue}\faUniversity} $\vdot$ São Paulo, SP {\color{cvred}~\faMapMarker*}}
-{Durante meu mestrado, me especializei em Física da Matéria Condensada, onde estudei Estado Sólido, Sistemas Quânticos de Muitos Corpos e Teoria de Grupos. Em minha pesquisa me concentrei especialmente em explorar as simetrias, topologia e propriedades eletrônicas do Grafeno Bicamada Torcido. Também realizei extensos cálculos numéricos em C++ e Python, o que levou a novos resultados sobre o modelo de Hubbard na rede de Bethe.
-}{\includegraphics[height=1.5cm]{fig/scientiavinces.png}} \\
-\cvdegree{2019-2022}{\footnotesize{Bacharelado em Física | Pesquisador FAPESP}}{B.Sc.}{Universidade de São Paulo {\color{cvblue}\faUniversity} $\vdot$ São Paulo, SP {\color{cvred}~\faMapMarker*}}
-{Durante minha graduação, enfrentei diversos desafios instigantes que contribuíram para o aprimoramento do meu pensamento analítico, abstração e minhas habilidades de resolução de problemas. Tive a oportunidade de aprofundar meu conhecimento em teorias físicas modernas, como Mecânica Quântica, Eletromagnetismo e Relatividade Geral. Além disso, participei de um Projeto de Iniciação Científica em Física de Partículas, onde utilizei programação em C e Python para investigar a evolução dos sabores dos neutrinos. Com uma média de 9,2/10, fui o terceiro melhor aluno de minha turma.
-}{\includegraphics[height=1.5cm]{fig/scientiavinces.png}} \\
+{Desenvolvimento de cálculos numéricos em C++ e Python, para analisar a transição de Mott. \newline
+Scripts em Bash para automatização de tarefas. \newline
+Publicação de dois artigos científicos, em colaboração com pesquisadores da UNESP e UFF.
+}{\includegraphics[width=1.2cm]{fig/usp.jpg}} \\
+\cvdegree{2019-2022}{\footnotesize{Bacharelado em Física}}{B.Sc.}
+{Universidade de São Paulo {\color{cvblue}\faUniversity} $\vdot$ São Paulo, SP {\color{cvred}~\faMapMarker*}}
+{Terceiro melhor aluno: média ponderada 9.2/10. \newline
+Desenvolvimento de códigos em Python e C para calcular a evolução de neutrinos solares. \newline
+Gerenciei os projetos de Iniciação Científica entre os membros do grupo através do GitHub.
+}{\includegraphics[width=1.2cm]{fig/usp.jpg}} \\
 \end{tabular}
 % -------------------------- EDUCATION -------------------------- %
 
 \vspace{-1.0em}
+
+\medskip
 
 % -------------------------- SKILLS -------------------------- %
 \section*{\faPuzzlePiece \; Habilidades}
 \scriptsize
 \begin{tabular}{r@{\hspace{0.2em}}ll}
 \bg{cvblue}{iconcolour}{\faLinux \; Linux} & \barrule{0.1}{0.5em}{cvgreen} & \vspace{-0.7em}
-Muita experiência em Linux. Já instalei e configurei mais de 50 máquinas virtuais \\
-& & Linux no meu ambiente do VirtualBox. Possuo bastante familiaridade com diversas \\
-& & distribuições, como Arch, Kali, Debian, Ubuntu e Gentoo. Uso a linha de comando \\
-& & e shell scripts intensivamente. Participação ativa na comunidade de código aberto. \\
-\bg{cvblue}{iconcolour}{\faPython \; python} & \barrule{0.08}{0.5em}{cvpurple} & \vspace{-0.7em}
-Fluente em Python. Escrevo principalmente simulações numéricas e scripts para \\
-& & automação. Atualmente estou estudando estruturas de dados e algoritmos com \\
-& & o intuito de aprimorar ainda mais minhas habilidades de programação. \\
+Experiência em diversas distribuições, como Arch Linux, Ubuntu, Debian e Gentoo. \\
+& & Uso intenso do terminal e automatização de tarefas com Bash Script. \\
+\bg{cvblue}{iconcolour}{\faCss3* \; CSS} & \barrule{0.05}{0.5em}{cvpurple} & \vspace{-0.7em}
+Estilização de páginas web, utilizando Flexbox para criar layouts responsivos, \\
+& & acessíveis e visualmente atraentes. \\
+\bg{cvblue}{iconcolour}{\faHtml5 \; HTML} & \barrule{0.04}{0.5em}{cvpurple} & \vspace{-0.7em}
+Estruturação e semântica de páginas web, garantindo uma base sólida para \\
+& & estilização e interatividade. \\
+\bg{cvblue}{iconcolour}{\faJs \; JavaScript} & \barrule{0.03}{0.5em}{cvpurple} & \vspace{-0.7em}
+Desenvolvimento front-end e back-end. \\ \\
+\bg{cvblue}{iconcolour}{\faPython \; python} & \barrule{0.08}{0.5em}{cvgreen} & \vspace{-0.7em}
+Utilizei Python intensamente durante minha graduação e mestrado em Física para \\
+& & realizar simulações numéricas, análises de dados e Machine Learning. \\
 \bg{cvblue}{iconcolour}{\faCopyright \; C/C++} & \barrule{0.06}{0.5em}{cvpurple} & \vspace{-0.7em}
-Autodidata com o livro "The C Programming Language". Também participei de \\
-& & diversos desafios de programação e tentei desenvolver um jogo 2D em C usando \\
-& & a biblioteca SDL. Confira ~\faGithub \, \href{https://github.com/matmarqs/aoc}{\texttt{matmarqs/aoc}} e ~\faGithub \, \href{https://github.com/matmarqs/gamedev}{\texttt{matmarqs/gamedev}}. \\
-\bg{cvblue}{iconcolour}{\faUserSecret \; Pentesting} & \barrule{0.03}{0.5em}{cvred} & \vspace{-0.7em}
-Estudo e realizo desafios de pentesting há 2 meses em diversas plataformas como \\
-& & HTB, THM e OTW. Possuo experiência básica em técnicas e ferramentas como \\
-& & SQL Injection, Nmap, BurpSuite, Ghidra e Wireshark. \\
-\bg{cvblue}{iconcolour}{\faShield* ~CyberSec} & \barrule{0.02}{0.5em}{cvred} & \vspace{-0.8em}
-Conhecimento teórico em conceitos de segurança e redes, e familiaridade com \\
-& & os frameworks NIST e OWASP. \\
+Aprendizado autodidata de C/C++ e resolução de desafios de programação. \\
+& & Desenvolvimento de jogos utilizando a biblioteca SDL, ~\faGithub \, \href{https://github.com/matmarqs/gamedev}{\texttt{matmarqs/gamedev}}. \\
+\bg{cvblue}{iconcolour}{\faShield* ~Cyber} & \barrule{0.03}{0.5em}{cvred} & \vspace{-0.8em}
+Experiência em cibersegurança pelas plataformas HackTheBox e Portswigger. \\
+& & Vulnerabilidades web: SQL Injection, XSS, IDOR, CSRF, SSRF. \\
+& & Ferramentas de segurança: Kali Linux, BurpSuite, Nmap, SQLmap. \\
 \end{tabular}
 % -------------------------- SKILLS -------------------------- %
 
 \vspace{-1.0em}
 
+\medskip
+
 % -------------------------- AWARDS -------------------------- %
-\section*{\faAward \; Prêmios}
+\section*{\faAward \; Medalhas em Olimpíadas Científicas}
 \scriptsize
 \hspace{-2em}
 \begin{minipage}[t]{0.24\textwidth}
@@ -253,12 +271,14 @@ Conhecimento teórico em conceitos de segurança e redes, e familiaridade com \\
 
 \vspace{-0.5em}
 
+\medskip
+
 % -------------------------- COURSES -------------------------- %
 \footnotesize
-\section*{\faSchool \; Certificações}
+\section*{\faSchool \; Cursos}
 \begin{tabular}{r| p{0.53\textwidth} c}
-\cvevent{2024}{Google Cybersecurity Professional Certificate -- Coursera}{Curso online}{\href{https://coursera.org/verify/professional-cert/H459BRS392G7}{Credencial \textcolor{cyan}{H459BRS392G7} {\color{cvblue} \faCheck}}}{Programa de cibersegurança de nível iniciante no Coursera, com duração de 168 horas. Aprendi muitos conceitos de segurança e redes, como por exemplo: Resposta a Incidentes, SIEM, IDS/IPS, o modelo OSI, Firewalls, diferentes tipos de Malware, Ataques e Vulnerabilidades.
-}{\vspace{0.5em} &}{\raisebox{-0.7\height}{\includegraphics[height=1.5cm]{fig/google.png}}} \\
+\cvevent{2024}{The Odin Project}{Curso online}{\href{https://www.theodinproject.com}{\texttt{www.theodinproject.com}} {\color{cvblue} ~\faGlobe}}{Formação em Desenvolvimento Full Stack com JavaScript. Conhecimentos em HTML e CSS, técnicas de estilização, como Flexbox e CSS Grid, para criar layouts modernos e responsivos. No back-end, Node.js e Express, desenvolvendo APIs eficientes e seguras. No front-end, utilizei React para criar interfaces dinâmicas e interativas. Experiência com PostgreSQL, integrando o banco de dados com aplicações web.
+}{\vspace{0.5em} &}{\raisebox{-0.8\height}{\hspace*{1em}\includegraphics[height=1.5cm]{fig/odinproject.png}}} \\
 \end{tabular}
 % -------------------------- COURSES -------------------------- %
 
@@ -272,8 +292,8 @@ Conhecimento teórico em conceitos de segurança e redes, e familiaridade com \\
 \begin{minipage}[t]{\rightcolwidth}
 \begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
 {\small
-\icon{\faEnvelope}{cvgreen}{} \myaddress \;\;
-\icon{\faCity}{cvgreen}{} \mycity \;\; \newline \newline
+%\icon{\faEnvelope}{cvgreen}{} \myaddress \;\;
+\icon{\faCity}{cvgreen}{} \mycity \;\;
 \icon{\faPhone}{cvgreen}{} \myphone \;\;
 \icon{\faAt}{cvgreen}{} \myemail
 }
