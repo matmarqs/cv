@@ -5,7 +5,7 @@ f=main
 
 clean:
 	rm -rf *.html
-	rm -rf *.pdf
+	#rm -rf *.pdf
 	rm -rf *.aux
 	rm -rf *.bbl
 	rm -rf *.blg
